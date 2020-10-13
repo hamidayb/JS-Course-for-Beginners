@@ -18,8 +18,21 @@
           document.write("\nMy Age is: ",this.age);
         }
       }
-      document.write("My Subjects are ",my_info.subjects);
+      document.write("\nMy Subjects are ",my_info.subjects);
       my_info.my_func();
+
+      //Defining Object via Constructor Notation
+      var const_obj = new Object();
+      const_obj.name = "Hamid";
+      const_obj.age = 19;
+      const_obj.program = "SE";
+      const_obj.subjects = ['HTML','CSS','JavaScript'];
+      const_obj.my_func = function(){
+        document.write("\nMy Name is ",this.name);
+      }
+
+      document.write("\nMy Program is ",const_obj.program);
+      const_obj.my_func();
     </script>
 
   </body>
