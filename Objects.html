@@ -13,9 +13,13 @@
         name: 'Hamid Ayub',
         age: 19,
         degree: "SE",
-        subjects: ['FoP','OOP','DSA','DAA','Web Programming']
+        subjects: ['FoP','OOP','DSA','DAA','Web Programming'],
+        my_func:  function(){
+          document.write("\nMy Age is: ",this.age);
+        }
       }
       document.write("My Subjects are ",my_info.subjects);
+      my_info.my_func();
     </script>
 
   </body>
